@@ -75,7 +75,6 @@ const searchIssues = () => {
         .then(res => res.json())
         .then(data => { displayIssues(data.data); updateIssueCount(data.data.length); });
 };
-
 const openModal = (id) => {
     fetch(`https://phi-lab-server.vercel.app/api/v1/lab/issue/${id}`)
         .then(res => res.json())
@@ -96,7 +95,6 @@ const openModal = (id) => {
             document.getElementById('modal').classList.replace('hidden', 'flex');
         });
 };
-
 const closeModal = () => document.getElementById('modal').classList.replace('flex', 'hidden');
 
 loadInitialData();
