@@ -44,8 +44,8 @@ const displayIssues = (issues) => {
                 <h3 class="font-bold text-[#1A1F2C] text-[17px] mb-2 leading-tight">${issue.title}</h3>
                 <p class="text-slate-500 text-[14px] mb-6 line-clamp-2">${issue.description}</p>
                 <div class="flex gap-2">
-                    <div class="bg-[#FEF2F2] text-[#EF4444] text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1 border border-red-100"><span>🤖</span> BUG</div>
-                    <div class="bg-[#FFF7ED] text-[#F97316] text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1 border border-orange-100"><span>🧱</span> HELP WANTED</div>
+                    <div class="bg-[#FEF2F2] text-[#EF4444] text-[12px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1 border border-red-300"><span>🤖</span> BUG</div>
+                    <div class="bg-[#FFF7ED] text-[#F97316] text-[12px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1 border border-orange-300"><span>🧱</span> HELP WANTED</div>
                 </div>
             </div>
             <div class="bg-white px-5 py-4 border-t border-gray-100 mt-auto">
