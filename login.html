@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GitHub Issues Tracker</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white w-[420px] p-10 rounded-xl shadow-lg text-center">
+
+<img src="assets/github-logo.png" class="w-20 mx-auto mb-4">
+
+<h1 class="text-2xl font-bold text-gray-800">
+GitHub Issues Tracker
+</h1>
+
+<p class="text-gray-500 mt-1 mb-6">
+Sign in to manage your issues
+</p>
+
+<div class="text-left">
+
+<label class="font-semibold text-gray-700">
+Username
+</label>
+
+<input 
+id="username"
+type="text"
+placeholder="Enter Username"
+class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+>
+
+<p class="text-sm text-purple-600 mt-1">
+Default: admin
+</p>
+
+</div>
+<div class="text-left mt-4">
+
+<label class="font-semibold text-gray-700">
+Password
+</label>
+
+<input
+id="password"
+type="password"
+placeholder="Enter Password"
+class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+>
+
+<p class="text-sm text-purple-600 mt-1">
+Default: admin123
+</p>
+
+</div>
+
+<button onclick="login()"
+class="w-full mt-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-purple-700 to-indigo-600 hover:opacity-90">
+
+Sign In
+
+</button>
+
+<div class="flex items-center my-6">
+
+<div class="flex-1 h-px bg-gray-300"></div>
+
+<span class="px-3 text-gray-400 text-sm">OR</span>
+
+<div class="flex-1 h-px bg-gray-300"></div>
+
+</div>
+
+<div class="bg-gray-100 p-4 rounded-lg text-sm">
+
+<p class="text-gray-500 mb-2">Demo Credentials:</p>
+
+<p><b>Username:</b> admin</p>
+
+<p><b>Password:</b> admin123</p>
+
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+let user=document.getElementById("username").value
+let pass=document.getElementById("password").value
+
+if(user==="admin" && pass==="admin123"){
+
+window.location.href="index.html"
+
+}
+
+else{
+
+alert("Invalid username or password")
+
+}
+}
+</script>
+
+</body>
+</html>
