@@ -83,7 +83,7 @@
             const btn = event.target;
 
             if(user === "admin" && pass === "admin123") {
-                // বাটন অ্যানিমেশন
+                
                 btn.innerText = "Checking...";
                 btn.disabled = true;
                 
@@ -95,7 +95,6 @@
             }
         }
 
-        // Enter চাপলে লগইন হবে
         document.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 login();
